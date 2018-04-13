@@ -21,28 +21,26 @@
 		 4    [BRACE_CLOSE]       }```
 		 
 	- we can generate Parent_Token files by using the  command line option 
-	```--parent``` 
-		followed by token file name
+		```--parent``` 
+			followed by token file name
 		- Eg: ``` uncrustify.exe -c Uncrustify.Common-CStyle.cfg -p debug.txt -f input.cpp -o output.txt --parent parent_token.txt -La  > a.log 2>&1```
 		
-	
-	```
-		 Line [Parent]            Text
-		 1    [PP_INCLUDE]        #
-		 1    [NONE]              include
-		 1    [NONE]              "macros.h"
-		 1    [NONE]              
-		 3    [NONE]              MACRO_DEFINED_ELSEWHERE
-		 3    [FUNC_CALL]         (
-		 3    [NONE]              Argument
-		 3    [FUNC_CALL]         )
-		 3    [FUNC_CALL]         {
-		 3    [NONE]              
-		 4    [FUNC_CALL]         }
-	```
+		```
+			Line [Parent]            Text
+			1    [PP_INCLUDE]        #
+			1    [NONE]              include
+			1    [NONE]              "macros.h"
+			1    [NONE]              
+			3    [NONE]              MACRO_DEFINED_ELSEWHERE
+			3    [FUNC_CALL]         (
+			3    [NONE]              Argument
+			3    [FUNC_CALL]         )
+			3    [FUNC_CALL]         {
+			3    [NONE]              
+			4    [FUNC_CALL]         }
+		```
 - we can generate generate Tokens & Parent Tokens on one go by enabling both --token,--parent
 	- Eg: ``` uncrustify.exe -c Uncrustify.Common-CStyle.cfg -p debug.txt -f ip.cpp -o op.txt --token Tokens.txt --parent parent_token.txt -La  > a.log 2>&1```
-	
 
 ### Cmake Changes for RUN_TESTS
 - If we want to generate tokens,parent tokens for the test cases then we need to change in 
