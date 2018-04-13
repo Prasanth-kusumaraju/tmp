@@ -4,7 +4,7 @@
 	- we can generate Token files by using the  command line option 
 	```--token```
 	followed by token file name
-- Eg: ``` uncrustify.exe -c Uncrustify.Common-CStyle.cfg -p debug.txt -f ip.cpp -o op.txt --token Tokens.txt -La  > a.log 2>&1```
+		- Eg: ``` uncrustify.exe -c Uncrustify.Common-CStyle.cfg -p debug.txt -f input.cpp -o output.cpp --token Tokens.txt -La  > a.log 2>&1```
 	
 	 ```
 		 Line [Token]             Text
@@ -23,7 +23,7 @@
 - we can generate Parent_Token files by using the  command line option 
 	```--parent``` 
 		followed by token file name
-- Eg: ``` uncrustify.exe -c Uncrustify.Common-CStyle.cfg -p debug.txt -f ip.cpp -o op.txt --parent parent_token.txt -La  > a.log 2>&1```
+	- Eg: ``` uncrustify.exe -c Uncrustify.Common-CStyle.cfg -p debug.txt -f input.cpp -o output.txt --parent parent_token.txt -La  > a.log 2>&1```
 	
 	```
 		 Line [Parent]            Text
@@ -40,7 +40,7 @@
 		 4    [FUNC_CALL]         }
 	```
 - we can generate generate Tokens & Parent Tokens on one go by enabling both --token,--parent
-- Eg: ``` uncrustify.exe -c Uncrustify.Common-CStyle.cfg -p debug.txt -f ip.cpp -o op.txt --token Tokens.txt --parent parent_token.txt -La  > a.log 2>&1```
+	- Eg: ``` uncrustify.exe -c Uncrustify.Common-CStyle.cfg -p debug.txt -f ip.cpp -o op.txt --token Tokens.txt --parent parent_token.txt -La  > a.log 2>&1```
 
 ### Cmake Changes for RUN_TESTS
 - If we want to generate tokens,parent tokens for the test cases then we need to change in 
@@ -54,3 +54,6 @@
 
 - Add languages to ptoken_test_lang to do parent token comparison on those languages
 	- ```set(ptoken_test_lang c-sharp c cpp d java pawn objective-c vala ecma imported regression)```
+- if we want to generate Tokens (or) Parent_Tokens for specific languages then we need to pass only those languages
+	- ```set(ptoken_test_lang vala)```
+	- The above piece of code will generate Parent Tokens for only the cases that are present in Vala, same for Tokens as well.
