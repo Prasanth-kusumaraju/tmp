@@ -5,7 +5,8 @@
 	```--token```
 	followed by token file name
 - Eg: ``` uncrustify.exe -c Uncrustify.Common-CStyle.cfg -p debug.txt -f ip.cpp -o op.txt --token Tokens.txt -La  > a.log 2>&1```
-	- ```
+	
+	 ```
 		 Line [Token]             Text
 		 1    [PREPROC]           #
 		 1    [PP_INCLUDE]        include
@@ -23,6 +24,7 @@
 	```--parent``` 
 		followed by token file name
 - Eg: ``` uncrustify.exe -c Uncrustify.Common-CStyle.cfg -p debug.txt -f ip.cpp -o op.txt --parent parent_token.txt -La  > a.log 2>&1```
+	
 	```
 		 Line [Parent]            Text
 		 1    [PP_INCLUDE]        #
