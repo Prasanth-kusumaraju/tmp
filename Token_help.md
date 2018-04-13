@@ -4,7 +4,7 @@
 	- we can generate Token files by using the  command line option 
 	```--token```
 	followed by token file name
-	-Eg: ``` uncrustify.exe -c Uncrustify.Common-CStyle.cfg -p debug.txt -f ip.cpp -o op.txt --token Tokens.txt -La  > a.log 2>&1```
+-Eg: ``` uncrustify.exe -c Uncrustify.Common-CStyle.cfg -p debug.txt -f ip.cpp -o op.txt --token Tokens.txt -La  > a.log 2>&1```
 	- ```
 		 Line [Token]             Text
 		 1    [PREPROC]           #
