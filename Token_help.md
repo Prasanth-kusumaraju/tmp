@@ -1,9 +1,7 @@
 ## Token Generation
 - In cmake test suit we have integrated a new feature to generate token and parent token and the compare the output and result file. If both the files are same then test case will pass otherwise testcase will be failed.
 - How to Generate Token files 
-	- we can generate Token files by using the  command line option 
-	```--token```
-	followed by token file name
+	- we can generate Token files by using the  command line option ```--token``` followed by token file name
 		- Eg: ``` uncrustify.exe -c Uncrustify.Common-CStyle.cfg -p debug.txt -f input.cpp -o output.cpp --token Tokens.txt -La  > a.log 2>&1```
 	
 	 ```
@@ -20,9 +18,8 @@
 		 3    [NEWLINE]           
 		 4    [BRACE_CLOSE]       }```
 		 
-	- we can generate Parent_Token files by using the  command line option 
-		```--parent``` 
-			followed by token file name
+
+	- we can generate Parent_Token files by using the  command line option ```--parent``` followed by token file name
 		- Eg: ``` uncrustify.exe -c Uncrustify.Common-CStyle.cfg -p debug.txt -f input.cpp -o output.txt --parent parent_token.txt -La  > a.log 2>&1```
 		
 		```
@@ -39,6 +36,7 @@
 			3    [NONE]              
 			4    [FUNC_CALL]         }
 		```
+
 - we can generate generate Tokens & Parent Tokens on one go by enabling both --token,--parent
 	- Eg: ``` uncrustify.exe -c Uncrustify.Common-CStyle.cfg -p debug.txt -f ip.cpp -o op.txt --token Tokens.txt --parent parent_token.txt -La  > a.log 2>&1```
 
