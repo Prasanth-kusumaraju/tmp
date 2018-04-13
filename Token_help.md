@@ -42,13 +42,13 @@
 
 ### Cmake Changes for RUN_TESTS
 - If we want to generate tokens,parent tokens for the test cases then we need to change in 
-```\tests\CMakeLists.txt```
+	- ```\tests\CMakeLists.txt```
 
 - Add languages to output_test_lang to do output comparison on those languages
-```set(output_test_lang c-sharp c cpp d java pawn objective-c vala ecma imported regression)```
+	- ```set(output_test_lang c-sharp c cpp d java pawn objective-c vala ecma imported regression)```
 
 - Add languages to token_test_lang to do token comparison on those languages
-```set(token_test_lang c-sharp c cpp d java pawn objective-c vala ecma imported regression)```
+	- ```set(token_test_lang c-sharp c cpp d java pawn objective-c vala ecma imported regression)```
 
 - Add languages to ptoken_test_lang to do parent token comparison on those languages
-```set(ptoken_test_lang c-sharp c cpp d java pawn objective-c vala ecma imported regression)```
+	- ```set(ptoken_test_lang c-sharp c cpp d java pawn objective-c vala ecma imported regression)```
