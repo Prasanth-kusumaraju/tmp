@@ -54,4 +54,4 @@
 	- ```set(ptoken_test_lang c-sharp c cpp d java pawn objective-c vala ecma imported regression)```
 - if we want to generate Tokens (or) Parent_Tokens for specific languages then we need to pass only those languages
 	- ```set(ptoken_test_lang vala)```
-	- The above piece of code will generate Parent Tokens for only the cases that are present in Vala, we have to follow the same for Tokens as well.
+	- The above piece of code will generate Parent Tokens for only the cases that are present in Vala, we have to follow the same to generate Tokens as well.
