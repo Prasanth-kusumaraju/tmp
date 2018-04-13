@@ -2,7 +2,7 @@
 - In cmake test suit we have integrated a new feature to generate token and parent token and the compare the output and result file. If both the files are same then test case will pass otherwise testcase will be failed.
 - Generating Token files 
 - we can generate Token files by using the  command line option ```--token``` followed by token file name
-		- Eg: ``` uncrustify.exe -c Uncrustify.Common-CStyle.cfg -p debug.txt -f input.cpp -o output.cpp --token Tokens.txt -La  > a.log 2>&1```
+	- Eg: ``` uncrustify.exe -c Uncrustify.Common-CStyle.cfg -p debug.txt -f input.cpp -o output.cpp --token Tokens.txt -La  > a.log 2>&1```
 	
 	 ```
 		 Line [Token]             Text
@@ -20,7 +20,7 @@
 		 
 
 - we can generate Parent_Token files by using the  command line option ```--parent``` followed by token file name
-		- Eg: ``` uncrustify.exe -c Uncrustify.Common-CStyle.cfg -p debug.txt -f input.cpp -o output.txt --parent parent_token.txt -La  > a.log 2>&1```
+	- Eg: ``` uncrustify.exe -c Uncrustify.Common-CStyle.cfg -p debug.txt -f input.cpp -o output.txt --parent parent_token.txt -La  > a.log 2>&1```
 		
 		```
 			Line [Parent]            Text
@@ -54,4 +54,4 @@
 	- ```set(ptoken_test_lang c-sharp c cpp d java pawn objective-c vala ecma imported regression)```
 - if we want to generate Tokens (or) Parent_Tokens for specific languages then we need to pass only those languages
 	- ```set(ptoken_test_lang vala)```
-	- The above piece of code will generate Parent Tokens for only the cases that are present in Vala, same for Tokens as well.
+	- The above piece of code will generate Parent Tokens for only the cases that are present in Vala, we have to follow the same for Tokens as well.
