@@ -17,12 +17,11 @@
 		 3    [FPAREN_CLOSE]      )
 		 3    [BRACE_OPEN]        {
 		 3    [NEWLINE]           
-		 4    [BRACE_CLOSE]       }
-	```
+		 4    [BRACE_CLOSE]       }```
 		 
 	- we can generate Parent_Token files by using the  command line option 
 	```--parent``` 
-	followed by token file name
+		followed by token file name
 	```
 		 Line [Parent]            Text
 		 1    [PP_INCLUDE]        #
